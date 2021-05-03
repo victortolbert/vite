@@ -1,17 +1,17 @@
-<template>
-  <div
-    class="w-full h-full min-h-screen bg-gray-800 text-gray-200 flex justify-center items-center font-mono text-2xl sm:text-3xl"
-  >
-    <Calculator />
-  </div>
-</template>
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import Calculator from "./components/Calculator.vue";
-
-export default defineComponent({
-  name: "App",
-  components: { Calculator },
-});
+// https://github.com/vueuse/head
+// you can use this to manipulate the document head in any components,
+// they will be rendered correctly in the html results with vite-ssg
+useHead({
+  title: 'Vitesse',
+  meta: [
+    { name: 'description', content: 'Opinionated Vite Starter Template' },
+  ],
+})
 </script>
+
+<template>
+  <router-view />
+</template>
