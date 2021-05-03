@@ -1,15 +1,25 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "baseUrl": ".",
     "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
+    "target": "esnext",
     "lib": ["esnext", "dom"],
-    "types": ["vite/client", "@types/jest"]
+    "strict": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite/client", "@types/jest"],
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "jsx": "preserve",
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",

@@ -1,12 +1,18 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[vue]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+
+  "volar.tsPlugin": true,
+  "volar.tsPluginStatus": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.enable": false,
+  "git.ignoreLimitWarning": true
 }

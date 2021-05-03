@@ -1,22 +1,27 @@
 module.exports = {
   purge: {
-    content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+    content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
     options: {
       safelist: [/^grid-rows-/, /^grid-cols-/, /^gap-/],
     },
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       animation: {
-        pulse: "pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        pulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
     },
   },
   variants: {
     extend: {
-      backgroundColor: ["active"],
+      backgroundColor: ['active'],
     },
   },
-  plugins: [],
-};
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
+}
